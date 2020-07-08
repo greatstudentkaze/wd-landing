@@ -1,3 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url(normalize_gsk.css);
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0); }
+
+.btn {
+  display: inline-block;
+  padding: 25px 41px;
+  font-size: 1em;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  color: #fff;
+  background: #34547A; }
+  .btn:hover {
+    background: #284665; }
+
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 37px;
+  text-align: center;
+  color: #000; }
+
+.text {
+  margin: 0;
+  font-size: 1em;
+  line-height: 26px;
+  text-align: center;
+  color: #727272; }
+
+.contact__submit {
+  padding: 20px 45px;
+  font-size: 0.875em;
+  line-height: 23px;
+  letter-spacing: 0.15em; }
 
 /*# sourceMappingURL=style.css.map */
