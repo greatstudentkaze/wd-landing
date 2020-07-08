@@ -177,7 +177,16 @@ body {
 }
 
 .about {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
   background: #FFF;
+
+  &__title {
+    margin-bottom: 50px;
+  }
 }
 
 .numbers {
