@@ -428,5 +428,36 @@ body {
   }
 }
 .footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #34547A;
+  color: #FFFFFF;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__copyright {
+    margin-left: 20px;
+  }
+  &__copyright-text {
+    margin: 0;
+    font-size: 0.8125em;
+  }
+  &__copyright-author {
+    margin-bottom: 19px;
+    display: block;
+    font-size: 1.615em;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  &__links {
+    display: flex;
+    margin-right: 5px;
+  }
+  &__link {
+    margin-left: 22px;
+  }
+  &__link-icon {}
 }

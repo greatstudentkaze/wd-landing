@@ -332,6 +332,29 @@ body {
       white-space: pre-line; }
 
 .footer {
-  background: #34547A; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #34547A;
+  color: #FFFFFF; }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__copyright {
+    margin-left: 20px; }
+  .footer__copyright-text {
+    margin: 0;
+    font-size: 0.8125em; }
+  .footer__copyright-author {
+    margin-bottom: 19px;
+    display: block;
+    font-size: 1.615em;
+    font-weight: 500;
+    line-height: 25px; }
+  .footer__links {
+    display: flex;
+    margin-right: 5px; }
+  .footer__link {
+    margin-left: 22px; }
 
 /*# sourceMappingURL=style.css.map */
