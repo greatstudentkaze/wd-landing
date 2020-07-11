@@ -14,13 +14,6 @@ const hideTempWrapper = () => {
     videoWrapper.removeEventListener('click', hideTempWrapper);
 };
 
-const scrollTo = elem => {
-    window.scroll({
-        left: 0,
-        top: elem.offsetTop,
-        behavior: 'smooth'
-    });
-};
 
 videoWrapper.addEventListener('click', hideTempWrapper);
 
@@ -34,7 +27,10 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
-headerBtn.addEventListener('click', () => scrollTo(contactSection));
+headerBtn.addEventListener('click', e => {
+    e.preventDefault();
+    contactSection.scrollIntoView({block: "center", behavior: "smooth"})
+});
 
 
 // back to top arrow
