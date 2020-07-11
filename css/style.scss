@@ -97,29 +97,28 @@ body {
     }
   }
   &__top-wrapper {
-    height: 60px;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &--active {
-      @media (max-width: 991.98px) {
-        display: flex;
-      }
-    }
 
     @media (max-width: 991.98px) {
       z-index: 998;
       flex-direction: column;
       position: absolute;
+      display: none;
       top: 0;
       right: 0;
       width: 250px;
-      padding-top: 50px;
+      padding-top: 70px;
       padding-bottom: 50px;
       background: #34547A;
       color: #FFFFFF;
       border-bottom-left-radius: 8px;
+
+      &--active {
+        display: flex;
+      }
     }
   }
   &__logo {
@@ -128,6 +127,7 @@ body {
 
     @media (max-width: 1199.98px) {
       margin-left: 0;
+      margin-bottom: 20px;
     }
   }
   &__menu {
@@ -150,9 +150,9 @@ body {
       z-index: 999;
       position: absolute;
       width: 30px;
-      height: 2px;
-      top: 35px;
-      right: 40px;
+      height: 3px;
+      top: 40px;
+      right: 35px;
       background: #000;
       cursor: pointer;
     }
@@ -163,11 +163,12 @@ body {
         position: absolute;
         display: block;
         width: 30px;
-        height: 2px;
+        height: 3px;
         top: -7px;
         right: 0;
         background: #000;
         cursor: pointer;
+        transition: transform 0.25s;
       }
     }
     &::after {
@@ -185,12 +186,14 @@ body {
         @media (max-width: 991.98px) {
           top: 0;
           transform: rotate(45deg);
+          background: #FFFFFF;
         }
       }
       &::after {
         @media (max-width: 991.98px) {
           top: 0;
           transform: rotate(-45deg);
+          background: #FFFFFF;
         }
       }
     }
@@ -206,6 +209,11 @@ body {
         margin-right: 0;
       }
     }
+
+    @media (max-width: 991.98px) {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
   }
   &__menu-link {
     position: relative;
@@ -216,6 +224,10 @@ body {
     text-decoration: none;
     color: #000;
 
+    @media (max-width: 991.98px) {
+      color: #FFFFFF;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -225,15 +237,26 @@ body {
       height: 1px;
       background: #222;
       transition: width 0.3s;
+
+      @media (max-width: 991.98px) {
+        height: 0;
+      }
     }
     &:hover::after {
       width: 100%;
     }
 
     &--active {
-      position: unset;
       font-weight: 500;
       color: #34547A;
+
+      &::after {
+        height: 0;
+      }
+
+      @media (max-width: 991.98px) {
+        color: #FFFFFF;
+      }
     }
   }
 
