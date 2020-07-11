@@ -363,7 +363,7 @@ body {
 
 .numbers {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   color: #FFFFFF;
   background: #34547A;
 
@@ -375,6 +375,10 @@ body {
   &__item {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+
   }
   &__item-text {
     margin-left: 20px;

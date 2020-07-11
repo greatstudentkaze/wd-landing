@@ -289,7 +289,7 @@ body {
 
 .numbers {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   color: #FFFFFF;
   background: #34547A; }
   .numbers__row {
@@ -298,7 +298,10 @@ body {
     justify-content: space-around; }
   .numbers__item {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px; }
   .numbers__item-text {
     margin-left: 20px;
     font-size: 1em;
