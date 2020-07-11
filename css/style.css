@@ -370,10 +370,18 @@ body {
   color: #FFFFFF; }
   .footer__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 442px) {
+      .footer__wrapper {
+        justify-content: center; } }
   .footer__copyright {
     margin-left: 20px; }
+    @media (max-width: 442px) {
+      .footer__copyright {
+        margin-bottom: 30px;
+        text-align: center; } }
   .footer__copyright-text {
     margin: 0;
     font-size: 0.8125em; }
@@ -388,5 +396,8 @@ body {
     margin-right: 5px; }
   .footer__link {
     margin-left: 22px; }
+  .footer__link-icon {
+    max-width: 44px;
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
