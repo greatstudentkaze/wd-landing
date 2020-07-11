@@ -8,6 +8,7 @@ const video = document.querySelector('.workstyle__media-video'),
 const hideTempWrapper = () => {
     videoTempWrapper.style.display = 'none';
     video.controls = true;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) video.play();
     videoWrapper.removeEventListener('click', hideTempWrapper);
 };
 
