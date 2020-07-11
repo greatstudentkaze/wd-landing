@@ -599,7 +599,7 @@ body {
     @media (max-width: 767.98px) {
       flex-basis: 50%;
     }
-    @media (max-width: 575.98px) {
+    @media (max-width: 380px) {
       flex-basis: 100%;
     }
   }
@@ -607,6 +607,10 @@ body {
     display: block;
     width: 100%;
     max-width: 480px;
+
+    @media (max-width: 767.98px) {
+      max-width: 380px;
+    }
   }
 }
 

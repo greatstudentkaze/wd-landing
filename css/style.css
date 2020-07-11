@@ -472,13 +472,16 @@ body {
     @media (max-width: 767.98px) {
       .projects__item {
         flex-basis: 50%; } }
-    @media (max-width: 575.98px) {
+    @media (max-width: 380px) {
       .projects__item {
         flex-basis: 100%; } }
   .projects__item-img {
     display: block;
     width: 100%;
     max-width: 480px; }
+    @media (max-width: 767.98px) {
+      .projects__item-img {
+        max-width: 380px; } }
 
 .clients {
   padding-top: 50px;
