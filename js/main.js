@@ -29,7 +29,7 @@ menuBtn.addEventListener('click', () => {
 
 headerBtn.addEventListener('click', e => {
     e.preventDefault();
-    contactSection.scrollIntoView({block: "center", behavior: "smooth"})
+    contactSection.scrollIntoView({block: "start", behavior: "smooth"})
 });
 
 
