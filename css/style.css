@@ -232,14 +232,14 @@ body {
     max-width: 1110px;
     width: 100%;
     overflow: hidden; }
-  .workstyle__media-after::after {
+  .workstyle__media-after {
     position: absolute;
     content: '';
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/icons/play-button.svg") no-repeat center, linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/workstyle/video-bg.jpg") no-repeat center/cover; }
+    background: url("../img/icons/play-button.svg") no-repeat center, linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)); }
   .workstyle__media-video {
     display: block;
     width: 100%;
