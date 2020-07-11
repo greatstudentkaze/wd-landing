@@ -8,6 +8,7 @@ const video = document.querySelector('.workstyle__media-video'),
 const hideTempWrapper = () => {
     videoTempWrapper.style.display = 'none';
     video.controls = true;
+    video.play();
     videoWrapper.removeEventListener('click', hideTempWrapper);
 };
 
