@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url(normalize_gsk.css);
 *, *::after, *::before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html, body {
+  font-size: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
 html {
   scroll-behavior: smooth; }
